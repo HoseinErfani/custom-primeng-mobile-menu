@@ -1,0 +1,57 @@
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link,
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover,
+.p-menubar .p-menuitem.p-menuitem-active>.p-menuitem-link {
+    background: unset;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link,
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover,
+.p-menubar .p-menuitem>.p-menuitem-link {
+    padding: .75rem 1rem .25rem 1rem;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link .p-menuitem-text,
+.p-menubar .p-menubar-root-list>.p-menuitem.p-menuitem-active>.p-menuitem-link:not(.p-disabled):hover .p-menuitem-text,
+.p-menubar .p-menuitem.p-menuitem-active>.p-menuitem-link .p-menuitem-text {
+    box-shadow: 0 2px 0px 0px red;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-text,
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover .p-menuitem-text,
+.p-menubar .p-menuitem>.p-menuitem-link .p-menuitem-text {
+    padding-bottom: .5rem;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-text,
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover .p-menuitem-text,
+.p-menubar .p-menuitem>.p-menuitem-link .p-menuitem-text {
+    order: 2;
+}
+
+.p-menubar .p-menuitem-link:focus {
+    box-shadow: unset!important;
+}
+
+.p-menubar .p-menuitem-link {
+    padding: .75rem 1rem .25rem 1rem;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link>.p-submenu-icon,
+.p-menubar .p-submenu-list .p-menuitem-link .p-submenu-icon {
+    margin-left: 7px!important;
+    order: 1;
+}
+
+@media screen and (max-width:960px) {
+    .p-menubar .p-menubar-root-list {
+        box-shadow: 1px 7px 10px #00000021;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .p-menubar-root-list>.p-menuitem-active>p-menubarsub>.p-submenu-list,
+    .p-menubar .p-submenu-list>.p-menuitem-active>p-menubarsub>.p-submenu-list {
+        margin-right: 16px;
+        border-right: 1px solid #eae8e8;
+        width: calc(100% - 16px);
+    }
+}
